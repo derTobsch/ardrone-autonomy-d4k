@@ -1,0 +1,22 @@
+{
+    "name": "ardrone-autonomy-d4k",
+    "version": "0.1.0",
+    "description": "Workshop for the Devoxx4Kids event based on ardrone-autonomy",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:derTobsch/ardrone-autonomy-d4k.git"
+    },
+    "keywords": [
+        "drone",
+        "ardrone",
+        "nodecopter",
+        "parrot",
+        "autonomous",
+        "kalman",
+        "pid",
+        "d4k",
+        "d4kde"
+    ],
+    "author": "Tobias Schneider <schneider@synyx.de>",
+    "license": "MIT"
+}
