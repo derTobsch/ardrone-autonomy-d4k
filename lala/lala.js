@@ -1,3 +1,34 @@
+var WorkshopExecuter = function(strategy) {
+    this.strategy = strategy;
+};
+WorkshopExecuter.prototype.execute = function() {
+    return this.strategy();
+};
+
+var sessionToStart;
+process.argv.forEach(function (val, index, array) {
+    sessionToStart = val;
+});
+
+var session;
+switch(sessionToStart) {
+    case 'eins':
+        session = sessionEins;
+        break;
+    case 'zwei':
+        session = sessionZwei;
+        break;
+    case 'drei':
+        session = sessionDrei;
+        break;
+    case 'vier':
+        session = sessionVier;
+        break;
+    default:
+        throw 'Diese Session gibt es nicht.'
+}
+
+
 var autonomy = require('../../ardrone-autonomy'),
     mission  = autonomy.createMission(),
     arDroneConstants = require('ar-drone/lib/constants');
@@ -23,18 +54,10 @@ mission.client().config('detect:detect_type', 12);
 mission.client().config('control:altitude_max', 3000);
 mission.client().config('control:altitude_min', 0);
 
-/* The kids can start here */
 
-mission.takeoff()
-    .zero()
-    .log()
-    .cw(30)
-    .log()
-    .forward(1.8)
-    .log()
-    .land();
 
-/* -- */
+new WorkshopExecuter(session).execute();
+
 
 mission.run(function (err, result) {
     if (err) {
