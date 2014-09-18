@@ -17,6 +17,10 @@
         "d4k",
         "d4kde"
     ],
+    "dependencies": {
+        "requirejs": "~2.1.15",
+        "ar-drone": "0.3.2"
+    },
     "author": "Tobias Schneider <schneider@synyx.de>",
     "license": "MIT"
 }

@@ -1,16 +1,8 @@
-var sessionEins = function () {
+define(function () {
+    return function (mission) {
 
-    console.log('EINS');
-    
-    mission.takeoff()
-        .zero()
-        .log()
-        .cw(30)
-        .log()
-        .forward(1.8)
-        .log()
-        .land();
-    
-    
-};
-
+        mission.takeoff()
+            .land();
+        
+    };
+});

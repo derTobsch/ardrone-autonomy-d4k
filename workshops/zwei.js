@@ -1,15 +1,8 @@
-var sessionZwei = function () {
-    
-    
-    mission.takeoff()
-        .zero()
-        .log()
-        .cw(30)
-        .log()
-        .forward(1.8)
-        .log()
-        .land();
-    
-    
-};
-
+define(function () {
+    return function (mission) {
+        mission.takeoff()
+            .forward(0.2)
+            .backward(0.2)
+            .land();
+    };
+});
