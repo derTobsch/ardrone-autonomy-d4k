@@ -1,29 +1,11 @@
-define(
-    ['workshops/eins', 'workshops/zwei', 'workshops/drei', 'workshops/vier'],
-    function (eins, zwei, drei, vier) {
-        
+define([], function () {
+
         return {
             runWith: function (mission) {
-
-                var session;
-
-                switch (process.argv[2]) {
-                    case 'eins':
-                        session = eins;
-                        break;
-                    case 'zwei':
-                        session = zwei;
-                        break;
-                    case 'drei':
-                        session = drei;
-                        break;
-                    case 'vier':
-                        session = vier;
-                        break;
-                    default:
-                        throw 'Diesen workshop gibt es nicht.';
+                var session = requirejs('workshops/' + process.argv[2]);
+                if (!session) {
+                    throw 'Diesen workshop gibt es nicht.';
                 }
-
                 session(mission);
             }
         };
