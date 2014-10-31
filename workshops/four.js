@@ -1,7 +1,7 @@
 define(function () {
     return function (mission) {
 
-        console.log('demo_4eck_mit_drehen.js (nochmal das 4 Eck, aber diesmal mit drehen in 90° Schritten)');
+        console.log('Rectangle with turning the quadcopter');
         
         mission.takeoff()
             .forward(1)

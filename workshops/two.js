@@ -1,8 +1,9 @@
 define(function () {
     return function (mission) {
 
-        console.log('demo_geometry.js (4 Eck und 3 Eck)');
+        console.log('Basic geometry. Fly a rectangle and a triangle');
 
+        // this is in horizontal, you can also do it on vertical
         mission.takeoff()
             .go({x:0, y:1})
             .go({x:1, y:1})

@@ -1,7 +1,7 @@
 define(function () {
     return function (mission) {
 
-        console.log('demo_basics.js (Hoch/Runter,Rechts/Links,Vor/Zurück,Drehen)');
+        console.log('Basic instructions. Try all commands of the quadcopter.');
 
         mission.takeoff()
             .forward(2)

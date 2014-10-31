@@ -1,8 +1,10 @@
 define(function () {
     return function (mission) {
 
-        console.log('demo_haus.js (Haus vom Nikolaus)');
+        console.log('Let your quadcopter fly the "Haus vom Nikolaus"');
 
+        // Haus vom Nikolaus in horizontal, but it is also possible in vertical
+        // http://de.wikipedia.org/wiki/Haus_vom_Nikolaus#mediaviewer/File:Blender3D_HouseOfStNiclas.gif
         mission.takeoff()
             .go({x:2, y:0})
             .go({x:3, y:1.5})

@@ -16,9 +16,8 @@ requirejs(['src/batteryListener', 'src/workshopLoader'], function (batteryListen
         
         // Connect and configure the drone
         mission.client().config('control:outdoor', 0);
-        mission.client().config('control:altitude_max', 3000);
+        mission.client().config('control:altitude_max', 2500);
         mission.client().config('control:altitude_min', 0);
-        mission.client().config('detect:detect_type', 12);
 
         try {
             workshop.runWith(mission);
