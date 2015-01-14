@@ -59,13 +59,14 @@ Start a mission which is located in the workshops directory with
 node startMission.js $mission-name
 ```
 
-Example
+Hint: You do not need to use the full path or the file extension. The name of the file is enough. 
+Also make sure that you also installed 'ardrone-autonomy'
+
+
+### Example
 ```sh
 node startMission.js one
 ```
-
-Hint: You do not need to use the full path or the file extension. The name of the file is enough. 
-Also make sure that you also installed 'ardrone-autonomy'
 
 # Licence
 
