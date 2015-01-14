@@ -6,7 +6,6 @@ which all kids have to program in their way to succeed the given exercise. If th
 to try what they want with the quadcopter.
 
 
-
 ## First exercise - Basic instructions
 
 Use all instructions of the quadcopter to know what you can do and learn the syntax.
@@ -22,3 +21,62 @@ Fly the famous "Haus of Nikolaus". It is a mathematical problem of the graph the
 where a euler path but no euler cycle does exists (http://en.wikipedia.org/wiki/Eulerian_path).
 
 The kids should solve this exercise with absolute values and the function go().
+
+
+# Presentation
+
+The presentation and a handout for the kids are available at the presentation directory.
+
+
+# Installation
+
+Check out this and the https://github.com/derTobsch/ardrone-autonomy repository side by side.
+
+Go into the 'ardrone-autonomy-d4k' directory
+```sh
+cd ardrone-autonomy-d4k
+```
+
+And install all dependency via npm (Node has to be installed, http://nodejs.org/)
+```sh
+npm install
+```
+
+# How to use
+
+Go into the 'ardrone-autonomy-d4k' directory
+```sh
+cd ardrone-autonomy-d4k
+```
+
+Start a mission which is located in the workshops directory with
+```sh
+node startMission.js one
+```
+
+Hint: You do not need to use the full path or the file extension. The name of the file is enough. 
+Also make sure that you also installed 'ardrone-autonomy'
+
+# Licence
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Tobias Schneider <schneider@synyx.de>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
