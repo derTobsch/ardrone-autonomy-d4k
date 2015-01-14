@@ -56,6 +56,11 @@ cd ardrone-autonomy-d4k
 
 Start a mission which is located in the workshops directory with
 ```sh
+node startMission.js $mission-name
+```
+
+Example
+```sh
 node startMission.js one
 ```
 
