@@ -32,6 +32,11 @@ The presentation and a handout for the kids are available at the presentation di
 
 Check out this and the https://github.com/derTobsch/ardrone-autonomy repository side by side.
 
+```sh
+git clone https://github.com/derTobsch/ardrone-autonomy-d4k.git
+git clone https://github.com/derTobsch/ardrone-autonomy.git
+```
+
 Go into the 'ardrone-autonomy-d4k' directory
 ```sh
 cd ardrone-autonomy-d4k
