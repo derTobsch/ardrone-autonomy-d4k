@@ -16,7 +16,7 @@ Use all instructions of the quadcopter to learn what you can do and learn the sy
 * Up
 * Down
 * Clockwise
-* CounterClockwise
+* Counterclockwise
 
 ## Second exercise - Basic geometry
 
