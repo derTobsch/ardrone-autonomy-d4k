@@ -8,8 +8,15 @@ to try what they want with the quadcopter.
 
 ## First exercise - Basic instructions
 
-Use all instructions of the quadcopter to learn what you can do and learn the syntax.
-Backward, Forward, Left, Right, Up, Down, Clockwise, CounterClockwise.
+Use all instructions of the quadcopter to learn what you can do and learn the syntax:
+* Backward
+* Forward
+* Left
+* Right
+* Up
+* Down
+* Clockwise
+* CounterClockwise
 
 ## Second exercise - Basic geometry
 
